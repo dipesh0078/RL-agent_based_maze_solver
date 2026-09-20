@@ -143,11 +143,13 @@ MAX_STEPS = 500
 
 agent_boy.x, agent_boy.y = state_to_pixels(START)
 
-phase = "training"     
-victory_state = START
+
 
 
 def main():
+    global episode, epsilon, state, steps, done
+    phase = "training"
+    victory_state = START
 
     # Main Game Loop
     running = True
